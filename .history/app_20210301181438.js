@@ -6,5 +6,4 @@ const submit = document.getElementById("submit");
 // for the meals
 
 const meals = document.getElementById("meals");
-const resultHeading = document.getElementById("result-heading");
-const single_meal = document.getElementById("single-meal");
+const resultHeading = document.get
