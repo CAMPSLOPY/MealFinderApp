@@ -1,3 +1,3 @@
 const search = document.getElementById("search");
 const randomBtn = document.getElementById("random");
-const searhBtn = document.getElementById("search-btn");
+const searhBtn = document.getElementById("search");
