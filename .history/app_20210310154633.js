@@ -63,7 +63,7 @@ mealsEl.addEventListener("click", (e) => {
   }
 });
 
-// Fetch meal Api by ID
+// let create the getMeal func
 
 function getMealById(mealID) {
   fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
@@ -73,15 +73,4 @@ function getMealById(mealID) {
 
       addMealToDom(meal);
     });
-}
-
-function addMealToDom(meal) {
-  const ingredients = [];
-  for (let i = 1; i <= 20; i++) {
-    if(meal[`strIngredient${i}`]){
-      ingredients.push(`${meal[`strIngredient`]}`)
-    }else{
-
-    }
-  }
 }

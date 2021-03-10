@@ -78,10 +78,6 @@ function getMealById(mealID) {
 function addMealToDom(meal) {
   const ingredients = [];
   for (let i = 1; i <= 20; i++) {
-    if(meal[`strIngredient${i}`]){
-      ingredients.push(`${meal[`strIngredient`]}`)
-    }else{
-
-    }
+    if(meal[`strIngredient${i}`])
   }
 }
