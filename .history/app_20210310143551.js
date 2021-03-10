@@ -58,7 +58,6 @@ mealsEl.addEventListener("click", (e) => {
     }
   });
   if (mealInfo) {
-    const mealID = mealInfo.getAtrribute("data-mealid");
-    console.log(mealID)
+    const mealID = mealInfo.getAtrribute("data-mealID");
   }
 });

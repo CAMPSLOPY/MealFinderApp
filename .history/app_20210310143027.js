@@ -23,6 +23,7 @@ function searchMeal(e) {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${item}`)
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         resultHeading.innerHTML = `<h2>Search results for '${item}':</h2>`;
         if (data.meals === null) {
           resultHeading.innerHTML =
@@ -57,8 +58,5 @@ mealsEl.addEventListener("click", (e) => {
       return false;
     }
   });
-  if (mealInfo) {
-    const mealID = mealInfo.getAtrribute("data-mealid");
-    console.log(mealID)
-  }
+  console.log(mealInfo);
 });
