@@ -66,9 +66,7 @@ mealsEl.addEventListener("click", (e) => {
 // let create the getMeal func
 
 function getMealById(mealID) {
-  fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data)
-    });
+  fetch(
+    `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`
+  ).then((res) => res.json()).then(data =>)
 }
