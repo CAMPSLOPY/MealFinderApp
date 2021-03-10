@@ -34,23 +34,17 @@ function searchMeal(e) {
             .map(
               (meal) =>
                 `<div class="meal">
-         <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
-         <div class= "meal-info" data-mealID="${meal.idMeal}">
-         <h3>${meal.strMeal}</h3>
-         </div>
-          </div>
-          `
+        //  <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
+        //  <div class= "meal-info" data-mealID="${meal.idMeal}">
+        //  <h3>${meal.strMeal}</h3>
+        //  </div>
+          </div>`
             )
-            .join("");
+            .join();
         }
       });
-    // clear the search text
-    search.value = "";
+    // clear the search tex
   } else {
     alert("what did you just do!!!!");
   }
 }
-
-mealsEl.addEventListener('click', (e)=>{
-
-})

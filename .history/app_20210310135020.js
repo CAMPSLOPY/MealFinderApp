@@ -45,12 +45,8 @@ function searchMeal(e) {
         }
       });
     // clear the search text
-    search.value = "";
+    
   } else {
     alert("what did you just do!!!!");
   }
 }
-
-mealsEl.addEventListener('click', (e)=>{
-
-})

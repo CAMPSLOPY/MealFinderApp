@@ -89,7 +89,6 @@ input[type="text"] {
   opacity: 0;
 }
 
-
 .meal:hover .meal-info {
   opacity: 1;
 }
@@ -157,7 +156,7 @@ input[type="text"] {
   }
 
   .meals {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
 
   .meal {

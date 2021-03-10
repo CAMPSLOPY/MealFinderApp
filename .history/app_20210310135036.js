@@ -50,7 +50,3 @@ function searchMeal(e) {
     alert("what did you just do!!!!");
   }
 }
-
-mealsEl.addEventListener('click', (e)=>{
-
-})

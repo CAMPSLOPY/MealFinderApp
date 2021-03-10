@@ -5,7 +5,7 @@ const submit = document.getElementById("submit");
 
 // for the meals
 
-const mealsEl = document.getElementById("meals");
+const meals = document.getElementById("meals");
 const resultHeading = document.getElementById("result-heading");
 const singleMeal = document.getElementById("single-meal");
 
@@ -26,31 +26,11 @@ function searchMeal(e) {
       .then((data) => {
         console.log(data);
         resultHeading.innerHTML = `<h2>Search results for '${item}':</h2>`;
-        if (data.meals === null) {
-          resultHeading.innerHTML =
-            "<p>There are no meals. Please Try again!</p>";
-        } else {
-          mealsEl.innerHTML = data.meals
-            .map(
-              (meal) =>
-                `<div class="meal">
-         <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
-         <div class= "meal-info" data-mealID="${meal.idMeal}">
-         <h3>${meal.strMeal}</h3>
-         </div>
-          </div>
-          `
-            )
-            .join("");
-        }
+      if(data.meals === null){
+        resultHeading
+      }
       });
-    // clear the search text
-    search.value = "";
   } else {
     alert("what did you just do!!!!");
   }
 }
-
-mealsEl.addEventListener('click', (e)=>{
-
-})

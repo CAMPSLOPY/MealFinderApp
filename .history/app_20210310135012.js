@@ -44,13 +44,9 @@ function searchMeal(e) {
             .join("");
         }
       });
-    // clear the search text
-    search.value = "";
+      
+    // clear the search tex
   } else {
     alert("what did you just do!!!!");
   }
 }
-
-mealsEl.addEventListener('click', (e)=>{
-
-})

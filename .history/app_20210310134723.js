@@ -38,19 +38,13 @@ function searchMeal(e) {
          <div class= "meal-info" data-mealID="${meal.idMeal}">
          <h3>${meal.strMeal}</h3>
          </div>
-          </div>
-          `
+          </div>`
             )
             .join("");
         }
       });
-    // clear the search text
-    search.value = "";
+    // clear the search tex
   } else {
     alert("what did you just do!!!!");
   }
 }
-
-mealsEl.addEventListener('click', (e)=>{
-
-})
