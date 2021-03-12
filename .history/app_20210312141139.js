@@ -86,6 +86,6 @@ function addMealToDom(meal) {
   }
   singleMeal.innerHTML = `<div>
     <h1>${meal.strMeal}</h1>
-    <img src="${meal.strMealThumb}" />
+    <img src="$" />
   </div>`;
 }
