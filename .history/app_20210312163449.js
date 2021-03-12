@@ -116,6 +116,6 @@ function randomMeal() {
     .then((data) => {
       const meal = data.meals[0];
 
-      addMealToDom(meal);
+      addMealToDom
     });
 }
