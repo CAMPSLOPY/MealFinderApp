@@ -79,8 +79,8 @@ function getMealById(mealID) {
 function addMealToDom(meal) {
   const ingredients = [];
   for (let i = 1; i <= 20; i++) {
-    if (meal[`strIngredient${i}`]) {
-      ingredients.push(`${meal[`strIngredient`]}`);
+    if (meal[`strMeasure${i}`]) {
+      ingredients.push(`${meal[`${strMeasure}`]}`);
     } else {
       break;
     }
@@ -101,14 +101,4 @@ function addMealToDom(meal) {
       </ul>
     </div>
   </div>`;
-}
-// The Random meal generator
-randomBtn.addEventListener("click", randomMeal);
-
-// fetch random Meal API
-
-function randomMeal() {
-  // clear meals and headings
-  mealsEl.innerHTML = "";
-  resultHeading.innerHTML = "";
 }

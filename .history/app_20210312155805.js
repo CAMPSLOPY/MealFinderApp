@@ -102,13 +102,13 @@ function addMealToDom(meal) {
     </div>
   </div>`;
 }
-// The Random meal generator
+// The Random meal generator 
 randomBtn.addEventListener("click", randomMeal);
 
 // fetch random Meal API
 
-function randomMeal() {
+function randomMeal(){
   // clear meals and headings
-  mealsEl.innerHTML = "";
-  resultHeading.innerHTML = "";
+  mealsEl.innerHTML = '';
+  HEAD
 }

@@ -97,18 +97,8 @@ function addMealToDom(meal) {
       <p>${meal.strInstructions}</p>  
       <h2>ingredients</h2>
       <ul>
-        ${ingredients.map((ing) => `<li>${ing}</li>`).join("")}
+        ${ingredients[meal`${meal.strMeasure}`].map((ing) => `<li>${ing}</li>`).join("")}
       </ul>
     </div>
   </div>`;
-}
-// The Random meal generator
-randomBtn.addEventListener("click", randomMeal);
-
-// fetch random Meal API
-
-function randomMeal() {
-  // clear meals and headings
-  mealsEl.innerHTML = "";
-  resultHeading.innerHTML = "";
 }

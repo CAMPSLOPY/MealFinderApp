@@ -164,11 +164,7 @@ input[type="text"] {
     width: 300px;
   }
   .single-meal img {
-    width: 90%;
+    width: 210px;
   }
-  .single-meal{
-    width: 100%;
-    overflow: hidden;
-    margin: auto;
-  }
+  .single-meal
 }
