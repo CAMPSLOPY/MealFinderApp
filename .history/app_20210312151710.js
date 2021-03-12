@@ -85,8 +85,8 @@ function addMealToDom(meal) {
       break;
     }
   }
-  // .join()-converts all the returned results to strings
-  singleMeal.innerHTML = `<div class="single-meal">
+  // .join()
+  singleMeal.innerHTML = `<div>
     <h1>${meal.strMeal}</h1>
     <img src="${meal.strMealThumb}" />
     <div class="single-meal-info">
@@ -97,7 +97,8 @@ function addMealToDom(meal) {
       <p>${meal.strInstructions}</p>  
       <h2>ingredients</h2>
       <ul>
-        ${ingredients.map((ing) => `<li>${ing}</li>`).join("")}
+      
+        ${ingredients.map((ing) => `<li>${ing}</li>`).join()}
       </ul>
     </div>
   </div>`;

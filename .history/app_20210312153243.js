@@ -86,7 +86,7 @@ function addMealToDom(meal) {
     }
   }
   // .join()-converts all the returned results to strings
-  singleMeal.innerHTML = `<div class="single-meal">
+  singleMeal.innerHTML = `<div class>
     <h1>${meal.strMeal}</h1>
     <img src="${meal.strMealThumb}" />
     <div class="single-meal-info">
