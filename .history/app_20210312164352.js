@@ -23,7 +23,7 @@ function searchMeal(e) {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${item}`)
       .then((res) => res.json())
       .then((data) => {
-        // we have received the api data here and then incorporate our local workflow with it...
+        console.log(data);
         resultHeading.innerHTML = `<h2>Search results for '${item}':</h2>`;
         if (data.meals === null) {
           resultHeading.innerHTML =
@@ -114,7 +114,7 @@ function randomMeal() {
   fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
     .then((res) => res.json())
     .then((data) => {
-      const meal = data.meals[0];
+      const meal = data.meals[1];
 
       addMealToDom(meal);
     });
